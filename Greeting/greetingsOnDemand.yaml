@@ -1,0 +1,14 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Returns greetings when you ask for them
+Resources:
+  greetingsOnDemand:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: .
+      Description: Returns greetings when you ask for them
+      MemorySize: 128
+      Timeout: 3
+      Role: 'arn:aws:iam::934888181710:role/service-role/myBasicExcecutionRole'
