@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::<BUCKET-NAME>/images/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::<BUCKET-NAME>/thumbs/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:svenja-pictures"
+            ],
+            "Resource": [
+                "<arn:aws:dynamodb:eu-central-1:934888181710:table/svenja-pictures>"
+            ]
+        }
+    ]
+}
