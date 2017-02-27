@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="design.css" rel="stylesheet">
+<title>Passwort ändern - Prototyp</title>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.16.min.js"></script>
+</head>
+<body>
+<h2>Serverless Programmmierung</h2>
+<h1>Passwort ändern</h1>
+<form role="form" id="passwort-ändern-form">
+<div>
+<label for="email">Email:</label>
+<input type="email" class="form-control" id="email">
+</div>
+<div>
+<label for="passwort">Altes Passwort:</label>
+<input type="passwort" class="form-control" id="altes-passwort">
+</div>
+<div>
+<label for="passwort">Neues Passwort:</label>
+<input type="passwort" class="form-control" id="neues-passwort">
+</div>
+<div>
+<label for="passwort">Neues Passwort bestätigen:</label>
+<input type="passwort" class="form-control" id="neues-passwort-bestätigen">
+</div>
+<button type="submit" id="ändern-button">Passwort ändern</button>
+</form>
+<div id="result">
+<p><a href="index.html">Zurück</a></p>
+<form action="index.html"><button type="submit">Zurück</button></form>
+<script src="js/passwortÄndern.js"></script>
+</body>
+</html>
