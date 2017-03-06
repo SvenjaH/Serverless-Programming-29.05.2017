@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Masterarbeit Haberditzl</title>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.16.min.js">
+	</script>
+    <meta name="description" 
+          content="160 Zeichen zum Beschreiben des Inhalts">
+    <link href="design2.css" rel="stylesheet">
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body id="registrieren">
+<div id="wrapper">
+<header>
+  <p><br></p>
+  <strong>Serverless Programming</strong>
+  <p><br></p>
+</header>
+
+<nav id="menü">
+  <ul>
+    <u>Menü</u><br><br>
+    <li id="nav1"><a href="registrieren.html">Registrieren</a></li>
+        <li id="nav3"><a href="login.html">Anmelden</a></li>
+		<li><a href="passwortVergessen.html">Passwort vergessen</a></li>
+		<li><a href="passwortÄndern.html">Passwort ändern</a></li>
+		<li><a href="dateiHochladen.html">Datei hochladen</a></li>
+		<li><a href="index.html">Startseite</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section>
+<h2>Prototyp - Registrierung</h2>
+
+<form role="form" id="form">
+<div>
+<label for="email">Email:</label>
+<input type="email" id="email">
+</div>
+<div>
+<label for="passwort">Passwort:</label>
+<input type="passwort" id="passwort">
+</div>
+<div>
+<label for="passwort">Passwort bestätigen:</label>
+<input type="passwort" id="passwort-bestätigen">
+</div>
+<button type="submit" id="button">Registrieren</button>
+</form>
+<div id="result">
+</div>
+<form action="index.html" id="zurück"><button type="submit" id="button2">Zurück</button></form>
+<script src="js/registrieren.js"></script>
+</section>
+
+<footer>
+  <p>Masterarbeit Beuth<br>
+  Serverless Programmierung: State of the Art und Evaluation</p>
+</footer>
+</div>
+</body>
+</html>
