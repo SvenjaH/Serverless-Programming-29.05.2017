@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Masterarbeit Haberditzl</title>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.16.min.js">
+	</script>
+    <meta name="description"> 
+    <link href="design2.css" rel="stylesheet">
+</head>
+
+<body id="login">
+<div id="wrapper">
+<header>
+  <p id="logotext">
+    <br />
+  </p>
+  <strong>Serverless Programming</strong>
+  <p>
+    <br />   
+  </p>
+</header>
+
+<nav id="menü">
+  <ul>
+    <u>Menü</u><br><br>
+    <li><a href="registrieren.html">Registrieren</a></li>
+        <li id="nav2"><a href="login.html">Anmelden</a></li>
+		<li><a href="passwortÄndern.html">Passwort ändern</a></li>
+		<li><a href="dateiHochladen.html">Datei hochladen</a></li>
+		<li><a href="index.html">Startseite</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section>
+<h2>Prototyp - Anmeldung</h2>
+<form role="form" id="form">
+<div>
+<label for="email">Email:</label>
+<input type="text" class="form-control" id="email">
+</div>
+<div>
+<label for="password">Passwort:</label>
+<input type="password" class="form-control" id="passwort">
+</div>
+<button type="submit" id="button">Einloggen</button>
+</form>
+<div id="result">
+</div>
+<form action="index.html" id="zurück"><button type="submit" id="button2">Zurück</button></form>
+<script src="login.js"></script>
+</section>
+
+<footer>
+  <p>Masterarbeit Beuth<br>
+  Serverless Programmierung: State of the Art und Evaluation</p>
+</footer>
+</div>
+</body>
+</html>

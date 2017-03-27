@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Masterarbeit Haberditzl</title>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.16.min.js">
+	</script>
+    <meta name="description"> 
+    <link href="design2.css" rel="stylesheet">
+</head>
+
+<body id="datei">
+<div id="wrapper">
+<header>
+  <p><br></p>
+  <strong>Serverless Programming</strong>
+  <p><br></p>
+</header>
+
+<nav id="menü">
+  <ul>
+    <u>Menü</u><br><br>
+    <li><a href="registrieren.html">Registrieren</a></li>
+        <li><a href="login.html">Anmelden</a></li>
+		<li><a href="passwortVergessen.html">Passwort vergessen</a></li>
+		<li><a href="passwortÄndern.html">Passwort ändern</a></li>
+		<li id="nav5"><a href="dateiHochladen.html">Datei hochladen</a></li>
+		<li><a href="index.html">Startseite</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section>
+<h2>Prototyp - Hochladen</h2>
+
+<h1>Datei hochladen</h1>
+<p>Wählen Sie bitte die gewünschte Datei aus, die Sie hochladen wollen<br><br>
+
+Image: <input type="file" id="file-chooser" />
+<br>
+Gallery: <input type="text" id="gallery-name" />
+<br>
+<button id="upload-button">Upload Image</button>
+<button id="list-images">List images in gallery </button>
+
+<form action="index.html" id="zurück"><button type="submit" id="button2">Zurück</button>
+<script src="datei.js"></script></form>
+</section>
+
+<footer>
+  <p>Masterarbeit Beuth<br>
+  Serverless Programmierung: State of the Art und Evaluation</p>
+</footer>
+</div>
+</body>
+</html>
