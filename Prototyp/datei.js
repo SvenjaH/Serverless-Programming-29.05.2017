@@ -1,10 +1,10 @@
 ﻿AWS.config.update({
-  accessKeyId: 'AKIAJKGR53U45ZT2QOMA',
-  secretAccessKey: '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',
+  accessKeyId: 'xxx',
+  secretAccessKey: 'xxx',
   region: 'eu-central-1'
 });
 
-var S3 = new AWS.S3({params: {Bucket: 'svenja-test'}});
+var S3 = new AWS.S3({params: {Bucket: 'xxx'}});
 var Dynamo = new AWS.DynamoDB.DocumentClient({region: 'eu-central-1'});
 
 // Fetch the gallery name from the gallery input
