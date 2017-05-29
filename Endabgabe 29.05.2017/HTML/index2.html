@@ -1,0 +1,73 @@
+<!-- *
+title: dateiOrdner.js
+description: Aufbau der Startseite der Anwendung
+author: Svenja Haberditzl
+help from: Keine
+software: Netbeans 8.2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Serverless Programming</title>
+	<!-- Einbindung der CSS-Datei -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+<div id="wrapper">
+	<div class="shell">
+		<div class="container">
+			<header id="header">
+			</header>
+			<!-- Erstellung der Navigation der Anwendung -->
+			<nav id="navigation">
+				<ul>
+				<!-- Der Menüpunkt der aktuell gewählten Seite ist blau hinterlegt -->
+					<li class="active"><a href="index2.html">Startseite</a></li>
+					<li><a href="groesseAendern.html">Bildgröße ändern</a></li>
+					<li><a href="bildHochladen.html">Bild hochladen<br>ohne Ordner</a></li>
+					<li><a href="dateiHochladen.html">Datei hochladen<br>ohne Ordner</a></li>
+					<li><a href="bildHochladenOrdner.html">Bild hochladen<br>im Ordner</a></li>
+					<li><a href="dateiHochladenOrdner.html">Datei hochladen<br>im Ordner</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+				<div class="cl">&nbsp;</div>
+			</nav>
+			<div class="slider-holder">
+			<!-- Hier wird der Kopfbereich unter dem Menü eingerichtet, der das Thema der Anwendung aufgreift -->
+				<div class="slider">
+					<h2>Serverless Programming</h2>						
+				</div>
+			</div>
+			<div class="main">
+			<!-- Der eigentlich Text der Seite wird erstellt -->
+				<div class="featured">
+				    <h1>Herzlich Willkommen!</h1><br><br><br>
+					<p>Auf dieser Homepage haben Sie die Möglichkeit ein Bild oder eine PDF-Datei hochzuladen und diese durch einen Link mit Mitmenschen
+					teilen zu können.
+					Weiterhin können Sie auch ein Hochladen in einen Ordner wählen. Bei dieser Variante wird das Bild oder die PDF-Datei dauerhaft
+					im System gespeichert.<br><br> 
+					Durch Eingabe eines Ordnernamen haben Sie die Möglichkeit sich dessen Inhalt ausgeben zu lassen.<br><br>
+					Damit Sie Ihre Dateien möglichst gut sortieren können, wurden Bilder und PDF-Dateien bewusst in unterschiedlichen Funktionen
+					voneinander getrennt.<br><br>
+					Weitere Erläuterungen zu den einzelnen Funktionen finden Sie unter dem jeweiligen Menüpunkt.</p>
+				</div>
+				</section>
+				<section class="entries">
+				<!-- Hier sind Informationen zur Arbeit zu finden -->
+						<div class="entry-inner">
+							<p>Masterarbeit Beuth<br>
+							Serverless Programmierung: State of the Art und Evaluation<br>
+							Svenja Haberditzl</p>
+						</div>
+				</section>
+			</div>
+			<!-- Fußbereich, der zur farblichen Abgrenzung dienst -->
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

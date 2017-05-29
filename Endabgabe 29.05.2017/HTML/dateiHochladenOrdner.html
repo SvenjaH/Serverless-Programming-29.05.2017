@@ -1,0 +1,90 @@
+<!-- *
+title: dateiOrdner.js
+description: Aufbau der Unterseite zum Hochladen einer Datei ím Ordner
+author: Svenja Haberditzl
+help from: Keine
+software: Netbeans 8.2
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>Serverless Programming</title>
+	<!-- Einbindung der CSS-Datei -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<!-- Einbindung  des sdk von aws -->
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.0.min.js">
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="shell">
+		<div class="container">
+			<header id="header">
+			</header>
+			<!-- Erstellung der Navigation der Anwendung -->
+			<nav id="navigation">
+				<ul>
+				<!-- Der Menüpunkt der aktuell gewählten Seite ist blau hinterlegt -->
+					<li><a href="index2.html">Startseite</a></li>
+					<li><a href="groesseAendern.html">Bildgröße ändern</a></li>
+					<li><a href="bildHochladen.html">Bild hochladen<br>ohne Ordner</a></li>
+					<li><a href="dateiHochladen.html">Datei hochladen<br>ohne Ordner</a></li>
+					<li><a href="bildHochladenOrdner.html">Bild hochladen<br>im Ordner</a></li>
+					<li class="active"><a href="dateiHochladenOrdner.html">Datei hochladen<br>im Ordner</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+				<div class="cl">&nbsp;</div>
+			</nav>
+			<div class="slider-holder">
+			<!-- Hier wird der Kopfbereich unter dem Menü eingerichtet, der das Thema der Anwendung aufgreift -->
+				<div class="slider">
+					<h2>Serverless Programming</h2>				
+				</div>
+			</div>
+			<div class="main">
+			<!-- Der eigentlich Text der Seite wird erstellt -->
+				<div class="featured">
+<h1>Datei hochladen mit Ordnern</h1><br><br>
+<p>Hier können Sie eine PDF-Datei hochladen und in einen Ordner speichern, um diese zu archivieren und zu verwalten.<br>
+Dabei geben Sie nach Auswahl der gewünschten Datei einen Ordnernamen an. Dieser kann bereits existieren, da das entsprechende PDF dann zu den bereits
+vorhanden Dateien des Ordners hinzugefügt wird. Existiert der Ordner noch nicht, dann wird er beim Vorgang des Hochladens erstellt.<br><br>
+Damit Sie eine Übersicht darüber haben, welche PDF-Dateien sich in einem Ordner befinden, können Sie sich durch Eingabe des Namens des gewünschten Ordner
+den Inhalt dessen ausgeben lassen. Die Namen der Dateien erscheinen dann und sind anklickbar, so dass sie in einem neuen Tab geöffnet
+werden können.<br><br>
+Da es in dieser Anwendung bewusst keine Auflistung der verfügbaren Ordner gibt, um die Privatsphäre anderer Anwender zu schützen, sollten Sie sich den
+Namen Ihres erstellten Ordners notieren. Sollten Sie doch einmal den Namen nicht wissen, so kontaktieren Sie den Betreiber der Anwendung.<br><br>
+<b><u>Anmerkung:</u></b> Sie werden durch ein Pop-up über den Erfolg Ihres Uploads informiert. Dies kann je nach Dateigröße ein wenig andauern.<br><br><br>
+Wählen Sie bitte die gewünschten Dateien aus, die Sie hochladen wollen<br><br>
+
+PDF-Datei: <input name="hoch" type="file" id="auswahl" />
+<br>
+Ordner: <input type="text" id="ordnername" />
+<br><br>
+<button name="hoch" id="hochladen">PDF hochladen</button>
+<button id="lnhalt">PDF's eines Ordners anzeigen</button>
+
+<ul id="image-list" />
+
+				</div>
+				</section>
+				<section class="entries">
+				<!-- Hier sind Informationen zur Arbeit zu finden -->
+						<div class="entry-inner">
+								<p>Masterarbeit Beuth<br>
+							Serverless Programmierung: State of the Art und Evaluation<br>
+							Svenja Haberditzl</p>
+						</div>
+				</section>
+			</div>
+			<!-- Fußbereich, der zur farblichen Abgrenzung dienst -->
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Einbindung der JavaScript Datei, die den Aufbau der Funktion der Unterseite enthält -->
+<script src="js/dateiOrdner.js"></script>
+</body>
+</html>

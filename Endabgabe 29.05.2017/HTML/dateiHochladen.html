@@ -1,0 +1,84 @@
+<!-- *
+title: dateiOrdner.js
+description: Aufbau der Unterseite zum Hochladen einer Datei
+author: Svenja Haberditzl
+help from: Keine
+software: Netbeans 8.2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Serverless Programming</title>
+	<!-- Einbindung der CSS-Datei -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<!-- Einbindung  des sdk von aws -->
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.0.min.js">
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="shell">
+		<div class="container">
+			<header id="header">
+			</header>
+			<!-- Erstellung der Navigation der Anwendung -->
+			<nav id="navigation">
+				<ul>
+				<!-- Der Menüpunkt der aktuell gewählten Seite ist blau hinterlegt -->
+					<li><a href="index2.html">Startseite</a></li>
+					<li><a href="groesseAendern.html">Bildgröße ändern</a></li>
+					<li><a href="bildHochladen.html">Bild hochladen<br>ohne Ordner</a></li>
+					<li class="active"><a href="dateiHochladen.html">Datei hochladen<br>ohne Ordner</a></li>
+					<li><a href="bildHochladenOrdner.html">Bild hochladen<br>im Ordner</a></li>
+					<li><a href="dateiHochladenOrdner.html">Datei hochladen<br>im Ordner</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+				<div class="cl">&nbsp;</div>
+			</nav>
+			<div class="slider-holder">
+			<!-- Hier wird der Kopfbereich unter dem Menü eingerichtet, der das Thema der Anwendung aufgreift -->
+				<div class="slider">
+					<h2>Serverless Programming</h2>				
+				</div>
+			</div>
+			<div class="main">
+			<!-- Der eigentlich Text der Seite wird erstellt -->
+				<div class="featured">
+<h1>Datei hochladen</h1><br><br>
+<p>
+Hier haben Sie die Möglichkeit eine PDF-Datei hochzuladen. Allerdings ist dies keine Funktion, mit der Sie diese dauerhaft speichern können.
+Sie haben hier lediglich die Möglichkeit kurzfristig eine Datei hochzuladen, um den dazugehörigen Link mit Mitmenschen teilen zu können.<br><br>
+Sobald der Vorgang des Hochladens erfolgreich abgeschlossen wurde, können Sie den Namen und die Größe der ausgewählten Datei sehen und anklicken. 
+Dieses öffnet sich dann in einem neuen Fenster. Sobald Sie die Seite neuladen oder sich in der Anwendung bewegen, können Sie Ihre Datei nicht mehr sehen. 
+Dies ist dann nur noch über Aufruf des Links zu der Datei möglich. Also sollten Sie auf jeden Fall das Bild der Vorschau nach Hochladen anklicken, um die 
+Adresse zu erhalten.<br><br>
+<b><u>Anmerkung:</u></b> Sie werden durch ein Pop-up über den Erfolg Ihres Uploads informiert. Dies kann je nach Dateigröße ein wenig andauern.<br><br><br>
+Wählen Sie bitte die gewünschte Datei aus, die Sie hochladen wollen<br><br>
+
+PDF-Datei: <input type="file" id="auswahl" name="files[]"/>
+<br>
+<output id="list"></output><br><br>
+<button id="hochladen">PDF hochladen</button></p>
+				</div>
+			</section>
+				<section class="entries">
+				<!-- Hier sind Informationen zur Arbeit zu finden -->
+						<div class="entry-inner">
+								<p>Masterarbeit Beuth<br>
+							Serverless Programmierung: State of the Art und Evaluation<br>
+							Svenja Haberditzl</p>
+						</div>
+				</section>
+			</div>
+			<!-- Fußbereich, der zur farblichen Abgrenzung dienst -->
+			<div id="footer">
+			</div>
+		</section>
+	</div>
+</div>
+<!-- Einbindung der JavaScript Datei, die den Aufbau der Funktion der Unterseite enthält -->
+<script src="js/datei.js"></script>
+</body>
+</html>

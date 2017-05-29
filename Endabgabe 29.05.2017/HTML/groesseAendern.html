@@ -1,0 +1,84 @@
+<!-- *
+title: dateiOrdner.js
+description: Aufbau der Unterseite zur Größenänderung eines Bildes
+author: Svenja Haberditzl
+help from: Keine
+software: Netbeans 8.2
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>Serverless Programming</title>
+	<!-- Einbindung der CSS-Datei -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<!-- Einbindung  des sdk von aws -->
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.3.0.min.js">
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="shell">
+		<div class="container">
+			<header id="header">
+			</header>
+			<!-- Erstellung der Navigation der Anwendung -->
+			<nav id="navigation">
+				<ul>
+				<!-- Der Menüpunkt der aktuell gewählten Seite ist blau hinterlegt -->
+					<li><a href="index2.html">Startseite</a></li>
+					<li class="active"><a href="groesseAendern.html">Bildgröße ändern</a></li>
+					<li><a href="bildHochladen.html">Bild hochladen<br>ohne Ordner</a></li>
+					<li><a href="dateiHochladen.html">Datei hochladen<br>ohne Ordner</a></li>
+					<li><a href="bildHochladenOrdner.html">Bild hochladen<br>im Ordner</a></li>
+					<li><a href="dateiHochladenOrdner.html">Datei hochladen<br>im Ordner</a></li>
+				</ul>
+				<div class="cl">&nbsp;</div>
+				<div class="cl">&nbsp;</div>
+			</nav>
+			<div class="slider-holder">
+			<!-- Hier wird der Kopfbereich unter dem Menü eingerichtet, der das Thema der Anwendung aufgreift -->
+				<div class="slider">
+					<h2>Serverless Programming</h2>				
+				</div>
+			</div>
+			<div class="main">
+			<!-- Der eigentlich Text der Seite wird erstellt -->
+				<div class="featured">
+				   <h1>Bildgröße ändern</h1><br><br>
+<p>Hier können Sie ein Bild hochladen und dieses in seiner Größe verändern.<br>
+Diese Funktion bietet sich an, wenn Sie ein Bild mit sehr breiten Maßen hochladen möchten und dieses für Ihren Anwendungszweck so nicht verwendbar ist.
+Das Bild wird automatisch in eine Breite von 800 Pixeln umgewandelt und hochgeladen.<br><br>
+Dabei wird das Bild automatisch mit der Dateiendung jpg abgespeichert.
+Sie müssen nicht zwangsweise eine JPEG Datei hochladen. Auch ein Bild im PNG-Format wird in ein JPEG umgewandelt.<br><br> 
+Nach Hochladen des Bildes können Sie das Vorschaubild anklicken und das Ergebnis in einem neuen Tab öffnen.<br><br>
+<b><u>Anmerkung:</u></b> Sie werden durch ein Pop-up über den Erfolg Ihres Uploads informiert. Dies kann je nach Dateigröße ein wenig andauern.<br><br><br>
+Wählen Sie bitte die gewünschten Dateien aus, die Sie hochladen wollen<br><br>
+
+Bild: <input type="file" id="auswahl"/>
+<br>
+<output id="list"></output><br><br>
+<button id="hochladen">Bild hochladen</button><br><br>
+
+			</div>
+				</section>	
+				<section class="entries">
+				<!-- Hier sind Informationen zur Arbeit zu finden -->
+						<div class="entry-inner">
+							<p>Masterarbeit Beuth<br>
+							Serverless Programmierung: State of the Art und Evaluation<br>
+							Svenja Haberditzl</p>
+						</div>
+				</section>
+			</div>
+			<!-- Fußbereich, der zur farblichen Abgrenzung dienst -->
+			<div id="footer">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Einbindung der JavaScript Datei, die den Aufbau der Funktion der Unterseite enthält -->
+<script src="js/groesseAendern.js"></script>
+</body>
+</html>
